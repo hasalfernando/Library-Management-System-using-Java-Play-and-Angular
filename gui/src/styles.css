@@ -1,0 +1,9 @@
+body {
+
+  background: url("assets/back1.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Lora;
+}
+
+

@@ -1,0 +1,19 @@
+<div style="text-align:center">
+  <h1 id = "titleHeader">
+    Westminster Library Management System
+  </h1>
+  <div id="navigation">
+    <a routerLink = "/home"><img id="logoNavi" class = 'navListItem' src="assets\westminsterLibraryLogo.png"></a>
+    <ul id='navList'>
+      <li class = 'navListItem'><a class="active" routerLink="/displayItems">Display Items</a></li>
+      <li class = 'navListItem'><a routerLink = "/addItem">Add Item</a></li>
+      <li class = 'navListItem'><a routerLink = "/removeItem">Delete Item</a></li>
+      <li class = 'navListItem'><a routerLink = "/borrowItem">Borrow Item</a></li>
+      <li class = 'navListItem'><a routerLink = "/returnItem">Return Item</a></li>
+      <li class = 'navListItem'><a routerLink = "/generateReport">Generate Report</a></li>
+      <li class = 'navListItem'><a routerLink = "/reserveItem">Reserve Item</a></li>
+    </ul>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

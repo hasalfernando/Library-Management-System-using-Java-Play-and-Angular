@@ -1,0 +1,40 @@
+#Load Index page
+GET     /                           controllers.FrontendController.index()
+
+# Serve static assets under public directory
+GET     /*file                      controllers.FrontendController.assetOrDefault(file)
+
+#Urls related to adding items
+POST    /addBook              controllers.BookController.addBook()
+POST    /removeBook              controllers.BookController.removeBook()
+
+#Urls related to removing items
+POST    /addDvd              controllers.DvdController.addDvd()
+POST    /removeDVD              controllers.DvdController.removeDvd()
+
+#Urls related to getting number of items
+POST    /getBookCols              controllers.BookController.getBookCols()
+POST    /getDvdCols              controllers.DvdController.getDvdCols()
+
+#Urls related to borrowing items and adding borrowers
+POST    /registerReader              controllers.ReaderController.register()
+POST    /borrowBookReader            controllers.ReaderController.borrowBook()
+POST    /borrowDvdReader            controllers.ReaderController.borrowDvd()
+
+#Urls related to returning items
+POST    /returnBook            controllers.ReaderController.returnBook()
+POST    /returnDvd            controllers.ReaderController.returnDvd()
+
+#Url related to get all items
+POST    /getItems            controllers.HomeController.getAllItems()
+
+#Urls related to getting overdue items
+POST    /getOverdueItems            controllers.HomeController.getOverdueItems()
+
+#Urls related to show reserving items
+POST    /reserveBook            controllers.ReaderController.reserveBookInfo()
+POST    /reserveDvd            controllers.ReaderController.reserveDvdInfo()
+
+#Urls related to reserve items
+POST    /confirmReserveBook            controllers.ReaderController.confirmReserveBookInfo()
+POST    /confirmReserveDvd            controllers.ReaderController.confirmReserveDvdInfo()

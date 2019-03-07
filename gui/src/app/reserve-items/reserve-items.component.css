@@ -1,0 +1,781 @@
+@media screen and (min-width: 1500px) {
+  #decisionForm {
+    width: 550px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 5px;
+    margin-top: 65px;
+    margin-left: 70px;
+    margin-right: 800px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+
+  }
+
+  #decisionFormSelector {
+    width: 90px;
+    margin-left: 10px;
+  }
+
+  #loadFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 210px;
+  }
+
+  #loadFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #loadFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #Logo {
+    margin-left: 350px;
+    margin-top: -120px;
+  }
+
+  .errorMessage {
+    margin-bottom: 30px;
+    alignment: center;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #reserveBookForm {
+    width: 550px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: -180px;
+    margin-left: 880px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+
+  }
+
+  .formInfo {
+    align-content: center;
+    width: 500px;
+  }
+
+  #bookFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 435px;
+    margin-bottom: 30px;
+
+  }
+
+  #bookFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #bookFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #reserveDvdForm {
+    width: 550px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: -180px;
+    margin-left: 880px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #dvdFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 435px;
+    margin-bottom: 30px;
+  }
+
+  #dvdFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #dvdFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #afterBookReserveDisplay {
+    background-color: white;
+    height: 100px;
+    align-content: center;
+    padding-left: 70px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 930px;
+    margin-right: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #bookDescription {
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #confirmBookReserveButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 300px;
+  }
+
+  #confirmBookReserveButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #afterDvdReserveDisplay {
+    background-color: white;
+    height: 100px;
+    align-content: center;
+    padding-left: 70px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 930px;
+    margin-right: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #dvdDescription {
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #confirmDvdReserveButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 300px;
+  }
+
+  #confirmDvdReserveButton:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1500px){
+  #decisionForm {
+    width: 550px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 5px;
+    margin-top: 65px;
+    margin-left: 70px;
+    margin-right: 800px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+
+  }
+
+  #decisionFormSelector {
+    width: 90px;
+    margin-left: 10px;
+  }
+
+  #loadFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 210px;
+  }
+
+  #loadFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #loadFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #Logo {
+    margin-left: 350px;
+    margin-top: -120px;
+  }
+
+  .errorMessage {
+    margin-bottom: 30px;
+    alignment: center;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #reserveBookForm {
+    width: 550px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: -180px;
+    margin-left: 680px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+
+  }
+
+  .formInfo {
+    align-content: center;
+    width: 500px;
+  }
+
+  #bookFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 435px;
+    margin-bottom: 30px;
+
+  }
+
+  #bookFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #bookFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #reserveDvdForm {
+    width: 550px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: -180px;
+    margin-left: 680px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #dvdFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 435px;
+    margin-bottom: 30px;
+  }
+
+  #dvdFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #dvdFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #afterBookReserveDisplay {
+    background-color: white;
+    height: 100px;
+    align-content: center;
+    padding-left: 70px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 930px;
+    margin-right: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #bookDescription {
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #confirmBookReserveButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 300px;
+  }
+
+  #confirmBookReserveButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #afterDvdReserveDisplay {
+    background-color: white;
+    height: 100px;
+    align-content: center;
+    padding-left: 70px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 930px;
+    margin-right: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #dvdDescription {
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #confirmDvdReserveButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 300px;
+  }
+
+  #confirmDvdReserveButton:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px){
+
+  #decisionForm {
+    width: 350px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 5px;
+    margin-top: 65px;
+    margin-left: 70px;
+    margin-right: 800px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+
+  }
+
+  #decisionFormSelector {
+    width: 90px;
+    margin-left: 10px;
+  }
+
+  #loadFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 210px;
+  }
+
+  #loadFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #loadFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #Logo {
+    margin-left: 10px;
+    margin-top: -30px;
+  }
+
+  .errorMessage {
+    margin-bottom: 30px;
+    alignment: center;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #reserveBookForm {
+    width: 350px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-left: 70px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+
+  }
+
+  .formInfo {
+    align-content: center;
+    width: 300px;
+  }
+
+  #bookFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 235px;
+    margin-bottom: 30px;
+
+  }
+
+  #bookFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #bookFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #reserveDvdForm {
+    width: 350px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-left: 70px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #dvdFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 235px;
+    margin-bottom: 30px;
+  }
+
+  #dvdFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #dvdFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #afterBookReserveDisplay {
+    background-color: white;
+    height: 100px;
+    align-content: center;
+    padding-left: 70px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 930px;
+    margin-right: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #bookDescription {
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #confirmBookReserveButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 300px;
+  }
+
+  #confirmBookReserveButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #afterDvdReserveDisplay {
+    background-color: white;
+    height: 100px;
+    align-content: center;
+    padding-left: 70px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 930px;
+    margin-right: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #dvdDescription {
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #confirmDvdReserveButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 300px;
+  }
+
+  #confirmDvdReserveButton:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px){
+
+  #decisionForm {
+    width: 350px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 5px;
+    margin-top: 65px;
+    margin-left: 0px;
+    margin-right: 800px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+
+  }
+
+  #decisionFormSelector {
+    width: 90px;
+    margin-left: 10px;
+  }
+
+  #loadFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 210px;
+  }
+
+  #loadFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #loadFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #Logo {
+    margin-left: 10px;
+    margin-top: -30px;
+  }
+
+  .errorMessage {
+    margin-bottom: 30px;
+    alignment: center;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #reserveBookForm {
+    width: 350px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-left: 0px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+
+  }
+
+  .formInfo {
+    align-content: center;
+    width: 300px;
+  }
+
+  #bookFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 235px;
+    margin-bottom: 30px;
+
+  }
+
+  #bookFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #bookFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #reserveDvdForm {
+    width: 350px;
+    background-color: white;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-left: 0px;
+    border-radius: 15px;
+    font-family: Calibri;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #dvdFormButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 235px;
+    margin-bottom: 30px;
+  }
+
+  #dvdFormButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #dvdFormButton:disabled {
+    background-color: grey;
+    color: black;
+  }
+
+  #afterBookReserveDisplay {
+    background-color: white;
+    height: 100px;
+    align-content: center;
+    padding-left: 70px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 930px;
+    margin-right: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #bookDescription {
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #confirmBookReserveButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 300px;
+  }
+
+  #confirmBookReserveButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #afterDvdReserveDisplay {
+    background-color: white;
+    height: 100px;
+    align-content: center;
+    padding-left: 70px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 930px;
+    margin-right: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #dvdDescription {
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #confirmDvdReserveButton {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    margin-left: 300px;
+  }
+
+  #confirmDvdReserveButton:hover {
+    background-color: white;
+    color: black;
+  }
+}

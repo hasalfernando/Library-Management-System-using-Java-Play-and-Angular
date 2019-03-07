@@ -1,0 +1,42 @@
+<div id = "itemTable">
+  <input onclick="this.value=''" placeholder="Search..." id="searchBar" type="text" name="searchItem">
+  <button id="searchButton" (click)="search()">Search</button>
+  <button id="resetButton" (click)="ngOnInit()">Reset</button>
+  <h1 class = 'heading'>Available Items</h1>
+  <table id="itemInfoTable" align="center" style="width:100%">
+    <thead>
+      <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Section</td>
+        <td>Type</td>
+        <td>Availability</td>
+      </tr>
+    </thead>
+    <tbody>
+      <br>
+      <ng-container *ngIf="show">
+      <tr *ngFor ="let i of items">
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.section}}</td>
+        <td>{{i.type}}</td>
+        <td>
+          <span style="color: greenyellow" *ngIf="i.borDate==null">Available</span>
+          <span style="color: red" *ngIf="i.borDate!=null">Unavailable</span>
+        </td>
+      </tr>
+      </ng-container>
+      <tr *ngIf="sresult !=null">
+        <td>{{sresult.id}}</td>
+        <td>{{sresult.name}}</td>
+        <td>{{sresult.section}}</td>
+        <td>{{sresult.type}}</td>
+        <td>
+          <span style="color: greenyellow" *ngIf="sresult.borDate==null">Available</span>
+          <span style="color: red" *ngIf="sresult.borDate!=null">Unavailable</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

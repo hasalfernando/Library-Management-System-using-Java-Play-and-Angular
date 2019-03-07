@@ -1,0 +1,57 @@
+<div id = "decisionForm">
+  <form [formGroup] = "returnForm" (ngSubmit) = "decideForm(returnForm.value)">
+    <h2>Return an item</h2>
+    Please select the item type :
+    <select id ="decisionFormSelector" name = "borrowItemType" formControlName="returnItemType" >
+      <option value="book"> Book</option>
+      <option value="dvd"> DVD</option>
+    </select>
+    <br>
+    <br>
+    <button id="loadFormButton" type="submit" [disabled] = "!returnForm.valid" value="submit">Load Form</button>
+    <div id = "Logo">
+      <img src = "\assets\westminsterLibraryLogo.png" style="width:150px;height:100px;">
+    </div>
+    <br><br>
+  </form>
+
+</div>
+
+<div id = "returnBookForm">
+  <form [formGroup] = "returnBookDetailsForm" (ngSubmit) = "returnBook(this.returnBookDetailsForm.value)">
+
+    Book ISBN*:<br> <input class = "formInfo" type="text" name="isbn" formControlName="returnBookIsbn">
+    <br>
+    <br>
+    Returning Date* :<br><input class = "formInfo" type="date" name="borDate" formControlName="returnBookRetDate">
+    <br>
+    <br>
+    Returning Time* : (hh:mm) (AM/PM)<br><input class = "formInfo" type="time" name="borTime" formControlName="returnBookRetTime">
+    <br>
+    <br>
+    <button id="bookFormButton" type="submit" [disabled] = "!returnBookDetailsForm.valid" value="submit">Return Book</button>
+
+  </form>
+
+</div>
+
+<div id = "returnDvdForm">
+  <form [formGroup] = "returnDvdDetailsForm" (ngSubmit) = "returnDvd(this.returnDvdDetailsForm.value)">
+
+    DVD Barcode*:<br> <input class = "formInfo" type="text" name="isbn" formControlName="returnDvdBarcode">
+    <br>
+    <br>
+    Returning Date* :<br><input class = "formInfo" type="date" name="borDate" formControlName="returnDvdRetDate">
+    <br>
+    <br>
+    Returning Time* : (hh:mm) (AM/PM)<br><input class = "formInfo" type="time" name="borTime" formControlName="returnDvdRetTime">
+    <br>
+    <br>
+    <button id="dvdFormButton" type="submit" [disabled] = "!returnDvdDetailsForm.valid" value="submit">Return Dvd</button>
+
+  </form>
+</div>
+
+<div id="afterReturnDisplay">
+  <label id="description">message</label>
+</div>

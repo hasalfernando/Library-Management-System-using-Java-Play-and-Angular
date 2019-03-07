@@ -1,0 +1,60 @@
+
+  #titleHeader {
+    background-color: black;
+    margin-left: -10px;
+    margin-right: -8px;
+    margin-top: -13px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #b6b8ba;
+  }
+
+  #navList {
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    background-color: #b6b8ba;
+    font-family: Lora;
+  }
+
+  .navListItem {
+    float: left;
+  }
+
+  .active {
+    margin-left: -40px;
+  }
+
+  #logoNavi {
+    margin-left: 0px;
+    width: 130px;
+    height: 100px;
+    background-color: #b6b8ba;
+    border-radius: 15px;
+  }
+
+  .navListItem a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+  }
+
+  .navListItem a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  #navigation {
+    background-color: #b6b8ba;
+    position: relative;
+    width: 101%;
+    opacity: 0.9;
+    margin-left: -8px;
+  }

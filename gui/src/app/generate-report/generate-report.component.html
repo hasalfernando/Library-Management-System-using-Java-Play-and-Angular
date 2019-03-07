@@ -1,0 +1,35 @@
+<div id = "itemTable">
+  <div id="getDateSection">
+  <form [formGroup] = "currentDateTimeForm" (ngSubmit) = "getOverdueItems(this.currentDateTimeForm.value)">
+    Current Date* :<input class = "formInfo" type="date" name="curDate" formControlName="curDate">
+    Current Time* :<input class = "formInfo" type="time" name="curTime" formControlName="curTime">
+    <br>
+    <br>
+    <button id="generateFormButton" type="submit" [disabled] = "!currentDateTimeForm.valid" value="submit">Generate Report</button>
+  </form>
+  </div>
+
+  <h1 class = 'heading'>Overdue Items</h1>
+  <table id="itemInfoTable" align="center" style="width:100%">
+    <thead>
+    <tr>
+      <td>ISBN/Barcode</td>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Due date</td>
+      <td>Due time</td>
+      <td></td>
+    </tr>
+    </thead>
+    <tr *ngFor ="let o of overdueItems">
+      <td>{{o.id}}</td>
+      <td>{{o.name}}</td>
+      <td>{{o.type}}</td>
+      <td>{{o.dueDate}}</td>
+      <td>{{o.borTime}}</td>
+    </tr>
+
+    <tbody>
+    </tbody>
+  </table>
+</div>

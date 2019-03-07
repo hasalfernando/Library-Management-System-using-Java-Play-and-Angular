@@ -1,0 +1,57 @@
+<div id="informationBar">
+  <ul id="infoList">
+    <li id="firstItem" class="infoListItem">Stored Books:</li>
+    <li id="storedBooksNum" class="infoListItem"> </li>
+    <li class="infoListItem">Spaces for Books:</li>
+    <li id="availableBooksNum" class="infoListItem"> </li>
+    <li class="infoListItem">Stored DVDs:</li>
+    <li id="storedDvdsNum" class="infoListItem"> </li>
+    <li class="infoListItem">Spaces for DVDs:</li>
+    <li id="availableDvdNum" class="infoListItem"> </li>
+  </ul>
+</div>
+
+<div id = "removeDecisionForm">
+  <form [formGroup] = "removeForm" (ngSubmit) = "decideForm(removeForm.value)">
+    <h2>Delete an item </h2>
+    Please select the item type :
+        <select id ="removeDecisionFormSelector" name = "rItemType" formControlName="rItemType" >
+        <option value="book"> Book</option>
+        <option value="dvd"> DVD</option>
+        </select>
+        <br><br>
+        <button id="loadFormButton" type="submit" [disabled] = "!removeForm.valid" value="submit">Load Form</button>
+        <div id = "Logo">
+          <img src = "\assets\westminsterLibraryLogo.png" style="width:150px;height:100px;">
+        </div>
+        <br>
+        <br>
+  </form>
+</div>
+
+<div id = "removeBookForm">
+  <label class="messageLabel" id="bookMessage" ></label>
+  <br>
+  <form [formGroup] = "removeBookDetailsForm" (ngSubmit) = "sendToRemoveBook(removeBookDetailsForm.value)">
+
+  Book ISBN:<br><input class = "formInfo" type="text" name="rBookIsbn" formControlName="rBookIsbn">
+  <br>
+  <br>
+  <button id="bookFormButton" type="submit" [disabled] = "removeBookDetailsForm.invalid" value="submit">Remove Item</button>
+
+</form>
+
+</div>
+      <div id = "removeDvdForm">
+      <label class="messageLabel" id="dvdMessage" ></label>
+      <br>
+      <form [formGroup] = "removeDvdDetailsForm" (ngSubmit) = "sendToRemoveDvd(removeDvdDetailsForm.value)">
+          
+        DVD Barcode:<br><input class = "formInfo" type="text" name="title" formControlName="rDvdBarcode">
+        <br>
+        <br>
+        <button id="dvdFormButton" type="submit" [disabled] = "removeDvdDetailsForm.invalid" value="submit">Remove Item</button>
+          
+      </form>
+</div>
+

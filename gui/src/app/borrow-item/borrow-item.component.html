@@ -1,0 +1,86 @@
+<div id = "decisionForm">
+  <form [formGroup] = "borrowForm" (ngSubmit) = "decideForm(borrowForm.value)">
+    <h2>Borrow an item</h2>
+    Please select the item type :
+    <select id ="decisionFormSelector" name = "borrowItemType" formControlName="borrowItemType" >
+      <option value="book"> Book</option>
+      <option value="dvd"> DVD</option>
+    </select>
+    <br>
+    <br>
+    <button id="loadFormButton" type="submit" [disabled] = "!borrowForm.valid" value="submit">Load Form</button>
+    <div id = "Logo">
+      <img src = "\assets\westminsterLibraryLogo.png" style="width:150px;height:100px;">
+    </div>
+    <br><br>
+  </form>
+ </div>
+
+<div id = "readerRegistrationForm">
+  <h1>Add a user</h1>
+  <label class="message" id="userMessage" ></label>
+  <form [formGroup] = "readerDetailsForm" (ngSubmit) = "registerReader(this.readerDetailsForm.value)">
+
+    Reader id:<br> <input class = "formInfo" type="text" name="readerId" formControlName="readerId">
+    <br>
+    <br>
+    Reader Name:<br> <input class = "formInfo" type="text" name="readerName" formControlName="readerName">
+    <br>
+    <br>
+    Mobile Number:<br> <input class = "formInfo" type="text" name="mobile" formControlName="mobile">
+    <br>
+    <br>
+    Email:<br> <input class = "formInfo" type="text" name="email" formControlName="email">
+    <br>
+    <br>
+    <button id="readerFormButton" type="submit" [disabled] = "!readerDetailsForm.valid" value="submit">Add User</button>
+
+  </form>
+</div>
+
+<div id = "borrowBookForm">
+  <label class="message" id="bookMessage" ></label>
+  <form [formGroup] = "borrowBookDetailsForm" (ngSubmit) = "addBookReader(this.borrowBookDetailsForm.value)">
+
+    ISBN* :<br> <input class = "formInfo" type="text" name="isbn" formControlName="borrowBookIsbn">
+    <br>
+    <br>
+    Borrowing Date* :<br><input class = "formInfo" type="date" name="borDate" formControlName="borrowBookBorDate">
+    <br>
+    <br>
+    Borrowing Time* : (hh:mm) (AM/PM)<br><input class = "formInfo" type="time" name="borTime" formControlName="borrowBookBorTime">
+    <br>
+    <br>
+    Borrowing Reader ID* :<br> <input class = "formInfo" type="text" name="curReader" formControlName="borrowBookCurReaderID">
+    <br>
+    <br>
+
+    <button id="bookFormButton" type="submit" [disabled] = "!borrowBookDetailsForm.valid" value="submit">Add Item</button>
+
+  </form>
+
+</div>
+
+<div id = "borrowDvdForm">
+  <label class="message" id="dvdMessage" ></label>
+  <form [formGroup] = "borrowDvdDetailsForm" (ngSubmit) = "addDvdReader(this.borrowDvdDetailsForm.value)">
+
+    DVD Barcode:<br> <input class = "formInfo" type="text" name="borrowDvdBarcode" formControlName="borrowDvdBarcode">
+    <br>
+    <br>
+    Borrowing Date:<br><input class = "formInfo" type="date" name="borrowDvdBorDate" formControlName="borrowDvdBorDate">
+    <br>
+    <br>
+    Borrowing Time* : (hh:mm) (AM/PM)<br><input class = "formInfo" type="time" name="borrowDvdBorTime" formControlName="borrowDvdBorTime">
+    <br>
+    <br>
+    Borrowing Reader ID:<br><input class = "formInfo" type="text" name="borrowDvdCurReaderID" formControlName="borrowDvdCurReaderID">
+    <br>
+    <br>
+    <button id="dvdFormButton" type="submit" [disabled] = "!borrowDvdDetailsForm.valid" value="submit">Add Item</button>
+
+  </form>
+</div>
+
+
+

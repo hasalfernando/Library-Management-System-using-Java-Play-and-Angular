@@ -1,0 +1,90 @@
+<div id="informationBar">
+  <ul id="infoList">
+    <li id="firstItem" class="infoListItem">Stored Books:</li>
+    <li id="storedBooksNum" class="infoListItem"> </li>
+    <li class="infoListItem">Spaces for Books:</li>
+    <li id="availableBooksNum" class="infoListItem"> </li>
+    <li class="infoListItem">Stored DVDs:</li>
+    <li id="storedDvdsNum" class="infoListItem"> </li>
+    <li class="infoListItem">Spaces for DVDs:</li>
+    <li id="availableDvdNum" class="infoListItem"> </li>
+  </ul>
+</div>
+
+<div id = "decisionForm">
+  <form [formGroup] = "form" (ngSubmit) = "decideForm(form.value)">
+    <h2>Add an item</h2>
+    Please select the item type : 
+    <select id ="decisionFormSelector" name = "itemType" formControlName="itemType" >
+      <option value="book"> Book</option>
+      <option value="dvd"> DVD</option>
+    </select>
+  <br>
+  <br>
+    <button id="loadFormButton" type="submit" [disabled] = "!form.valid" value="submit">Load Form</button>
+    <div id = "Logo">
+      <img src = "\assets\westminsterLibraryLogo.png" style="width:150px;height:100px;">
+    </div>
+  <br><br>
+</form>
+</div>
+
+<div id = "bookForm">
+  <label class="errorMessage" id="bookErrorMessage" ></label>
+  <br>
+<form [formGroup] = "bookDetailsForm" (ngSubmit) = "postBookFormData(this.bookDetailsForm.value)">
+
+  Book title*:<br> <input id="bTitle" class = "formInfo" type="text" name="bTitle" formControlName="bTitle">
+  <br> 
+  <br>
+  ISBN*:<br> <input id="bIsbn" class = "formInfo" type="text" name="bIsbn" formControlName="bIsbn">
+  <br>
+  <br>
+  Sector*:<br> <input id="bSector" class = "formInfo" type="text" name="bSector" formControlName="bSector">
+  <br>
+  <br>
+  Publication Date*:<br><input id="bPubDate" class = "formInfo" type="date" name="bPubDate" formControlName="bPubDate">
+  <br>
+  <br>
+  Author/s*:<br> <input id="bAuthor" class = "formInfo" type="text" name="bAuthor" formControlName="bAuthor">
+  <br>
+  <br>
+  <button id="bookFormButton" type="submit" [disabled] = "this.bookDetailsForm.invalid" value="submit">Add Item</button>
+
+</form>
+
+</div>
+
+<div id = "dvdForm">
+  <label class="errorMessage" id="dvdErrorMessage" ></label>
+    <form [formGroup] = "dvdDetailsForm" (ngSubmit) = "postDvdFormData(this.dvdDetailsForm.value)">
+    
+      DVD title*:<br><input class = "formInfo" type="text" name="dTitle" formControlName="dTitle">
+      <br> 
+      <br>
+      Bar code*:<br> <input class = "formInfo" type="text" name="dBarcode" formControlName="dBarcode">
+      <br>
+      <br>
+      Sector*:<br><input class = "formInfo" type="text" name="dSector" formControlName="dSector">
+      <br>
+      <br>
+      Publication Date*:<br><input class = "formInfo" type="date" name="dPubDate" formControlName="dPubDate">
+      <br>
+      <br>
+      Producer*:<br><input class = "formInfo" type="text" name="dProducer" formControlName="dProducer">
+      <br>
+      <br>
+      Actor/s*:<br> <input class = "formInfo" type="text" name="dActor" formControlName="dActor">
+      <br>
+      <br>
+      Language/s*:<br> <input class = "formInfo" type="text" name="dLanguages" formControlName="dLanguages">
+      <br>
+      <br>
+      Subtitle/s*:<br> <input class = "formInfo" type="text" name="dSubs" formControlName="dSubs">
+      <br>
+      <br>
+      <button id="dvdFormButton" type="submit" [disabled] = "!this.dvdDetailsForm.valid" value="submit">Add Item</button>
+    
+    </form>
+</div>
+

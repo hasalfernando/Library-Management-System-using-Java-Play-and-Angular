@@ -1,0 +1,61 @@
+<div id = "decisionForm">
+  <form [formGroup] = "reserveDecisionForm" (ngSubmit) = "decideForm(reserveDecisionForm.value)">
+    <h2>Reserve item</h2>
+    Please select the item type :
+    <select id ="decisionFormSelector" name = "reserveItemType" formControlName="reserveItemType" >
+      <option value="book"> Book</option>
+      <option value="dvd"> DVD</option>
+    </select>
+    <br>
+    <br>
+    <button id="loadFormButton" type="submit" [disabled] = "!reserveDecisionForm.valid" value="submit">Load Form</button>
+    <div id = "Logo">
+      <img src = "\assets\westminsterLibraryLogo.png" style="width:150px;height:100px;">
+    </div>
+    <br><br>
+  </form>
+
+</div>
+
+<div id = "reserveBookForm">
+  <form [formGroup] = "reserveBookDetailsForm" (ngSubmit) = "reserveBookInfo(this.reserveBookDetailsForm.value)">
+
+    Book ISBN*:<br> <input class = "formInfo" type="text" name="reserveBookIsbn" formControlName="reserveBookIsbn">
+    <br>
+    <br>
+    Reader id*:<br> <input class = "formInfo" type="text" name="reserveBookReader" formControlName="reserveBookReader">
+    <br>
+    <br>
+    <button id="bookFormButton" type="submit" [disabled] = "!reserveBookDetailsForm.valid" value="submit">View Book</button>
+
+  </form>
+
+</div>
+
+<div id = "reserveDvdForm">
+  <form [formGroup] = "reserveDvdDetailsForm" (ngSubmit) = "reserveDvdInfo(this.reserveDvdDetailsForm.value)">
+
+    DVD Barcode:<br> <input class = "formInfo" type="text" name="reserveDvdBarcode" formControlName="reserveDvdBarcode">
+    <br>
+    <br>
+    Reader id*:<br> <input class = "formInfo" type="text" name="reserveDvdReader" formControlName="reserveDvdReader">
+    <br>
+    <br>
+    <button id="dvdFormButton" type="submit" [disabled] = "!reserveDvdDetailsForm.valid" value="submit">View Dvd</button>
+
+  </form>
+</div>
+
+<div id="afterBookReserveDisplay">
+  <label id="bookDescription"></label>
+  <br>
+  <br>
+  <button (click)="confirmReserveBook(this.reserveBookDetailsForm.value)" id="confirmBookReserveButton" type="submit" value="submit">Okay</button>
+</div>
+
+<div id="afterDvdReserveDisplay">
+  <label id="dvdDescription"></label>
+  <br>
+  <br>
+  <button (click)="confirmReserveDvd(this.reserveDvdDetailsForm.value)" id="confirmDvdReserveButton" type="submit" value="submit">Okay</button>
+</div>
